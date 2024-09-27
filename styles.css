@@ -1,0 +1,20 @@
+body {
+  display: flex;
+}
+
+.bodyDiv {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid {
+  background-color: antiquewhite;
+  display: flex;
+  width: 600px;
+  height: 600px;
+}
+.line {
+  display: flex;
+}
