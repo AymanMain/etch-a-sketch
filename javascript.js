@@ -50,16 +50,16 @@ function createGrid(gridSize) {
   inputLabel.textContent = gridSize + " x " + gridSize;
   document.addEventListener("mousedown", () => (isMouseDown = true));
   document.addEventListener("mouseup", () => (isMouseDown = false));
-  const cellSize = 600 / gridSize;
+
   for (var i = 0; i < gridSize; i++) {
+    const cellSize = 600 / gridSize;
     const line = document.createElement("div");
     line.classList.add("line");
     for (var j = 0; j < gridSize; j++) {
       const cell = document.createElement("div");
       cell.classList.add("cell");
-      cell.style.height = "${cellSize}px";
-      cell.style.width = "${cellSize}px";
-      cell.style.padding = "5px";
+      cell.style.height = `${cellSize}px`;
+      cell.style.width = `${cellSize}px`;
 
       // Direct color change on mousedown
       cell.addEventListener("mousedown", () => {
